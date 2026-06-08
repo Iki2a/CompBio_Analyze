@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
 import seaborn as sns
@@ -14,6 +16,29 @@ from sklearn.metrics import (r2_score, mean_squared_error, mean_absolute_error,
                              confusion_matrix, cohen_kappa_score, roc_curve)
 import warnings
 warnings.filterwarnings('ignore')
+
+try:
+    get_ipython
+except NameError:
+    _RUNNING_IN_IPYTHON = False
+else:
+    _RUNNING_IN_IPYTHON = True
+
+try:
+    from IPython.display import display as _ipython_display
+except ImportError:
+    _ipython_display = None
+
+
+def display(obj):
+    """Use rich notebook display when available, otherwise print readable tables."""
+    if _RUNNING_IN_IPYTHON and _ipython_display is not None:
+        _ipython_display(obj)
+    elif hasattr(obj, "to_string"):
+        print(obj.to_string())
+    else:
+        print(obj)
+
 
 plt.rcParams['figure.dpi'] = 120
 sns.set_style('whitegrid')
@@ -94,10 +119,10 @@ for grp, col in [('Termofil', '#E74C3C'), ('Mesofil', '#3498DB')]:
                 boxprops=dict(facecolor=col, alpha=0.7),
                 medianprops=dict(color='black', linewidth=2))
 
-ax1.set_xlabel('Topt (°C)'); ax1.set_ylabel('Jumlah Strain')
+ax1.set_xlabel('Topt (degC)'); ax1.set_ylabel('Jumlah Strain')
 ax1.legend(); ax1.set_title('Histogram')
 ax2.set_xticks([1,2]); ax2.set_xticklabels(['Termofil','Mesofil'])
-ax2.set_ylabel('Topt (°C)'); ax2.set_title('Boxplot')
+ax2.set_ylabel('Topt (degC)'); ax2.set_title('Boxplot')
 plt.tight_layout()
 plt.savefig('fig2_distribusi_topt.png', bbox_inches='tight')
 plt.show()
@@ -131,7 +156,7 @@ deltas = [df[df.group=='Termofil'][f].mean() - df[df.group=='Mesofil'][f].mean()
 
 ax1.barh(feats, deltas, color=['#27AE60' if d>0 else '#E74C3C' for d in deltas], alpha=0.8)
 ax1.axvline(0, color='black', lw=1)
-ax1.set_xlabel('Δ Mean (Termofil - Mesofil)')
+ax1.set_xlabel('Delta Mean (Termofil - Mesofil)')
 ax1.set_title('Selisih Rata-rata GC')
 for i, (d, f) in enumerate(zip(deltas, feats)):
     ax1.text(d + 0.1*np.sign(d), i, mw_res[f]['sig'], va='center', fontsize=10)
@@ -173,7 +198,7 @@ for ax, feat in zip(axes, GC_FEATS):
 
     r = corr_res[feat]['pearson']
     ax.set_title(f"{feat}\nr = {r:.3f}")
-    ax.set_xlabel('GC (%)'); ax.set_ylabel('Topt (°C)')
+    ax.set_xlabel('GC (%)'); ax.set_ylabel('Topt (degC)')
     if feat == GC_FEATS[0]: ax.legend(fontsize=8)
 
 plt.tight_layout()
@@ -236,15 +261,15 @@ pgls_b = [pgls_res[f]['beta_pgls'] for f in GC_FEATS]
 pgls_lo = [pgls_res[f]['ci_lo'] for f in GC_FEATS]
 pgls_hi = [pgls_res[f]['ci_hi'] for f in GC_FEATS]
 
-ax.bar(x_pos - w/2, ols_b,  w, label='OLS β',  color='#3498DB', alpha=0.8)
-ax.bar(x_pos + w/2, pgls_b, w, label='PGLS β', color='#E74C3C', alpha=0.8)
+ax.bar(x_pos - w/2, ols_b,  w, label='OLS beta',  color='#3498DB', alpha=0.8)
+ax.bar(x_pos + w/2, pgls_b, w, label='PGLS beta', color='#E74C3C', alpha=0.8)
 ax.errorbar(x_pos + w/2, pgls_b,
             yerr=[np.array(pgls_b)-np.array(pgls_lo),
                   np.array(pgls_hi)-np.array(pgls_b)],
             fmt='none', color='black', capsize=4)
 ax.axhline(0, color='black', lw=0.8)
 ax.set_xticks(x_pos); ax.set_xticklabels(GC_FEATS)
-ax.set_ylabel('Koefisien Regresi (β)'); ax.legend()
+ax.set_ylabel('Koefisien Regresi (beta)'); ax.legend()
 plt.tight_layout()
 plt.savefig('fig6_pgls.png', bbox_inches='tight')
 plt.show()
