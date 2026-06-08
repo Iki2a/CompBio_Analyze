@@ -1,0 +1,92 @@
+Genus_and_species,Taxonomy_ID,Strain,Superkingdom,Phylum,Class,Order,Family,Genus,Assembly_or_accession,Genome_GC(%),Genome_size(Mbp),16S_accession,16S_GC(%),Tmin(¸C),Topt_average(¸C),Topt_low(¸C),Topt_high(¸C),Tmax(¸C),Tmax-Tmin(¸C)
+Marinithermus hydrothermalis,186192.0,T1,Bacteria,Deinococcus-Thermus,Deinococci,Thermales,Thermaceae,Marinithermus,GCA_000195335.1,68.1,2.3,AB079382,64.0,50.0,67.5,,,72.5,22.5
+Caldimicrobium thiodismutans,1653476.0,TF1,Bacteria,Thermodesulfobacteria,Thermodesulfobacteria,Thermodesulfobacteriales,Thermodesulfobacteriaceae,Caldimicrobium,GCA_001548275.1,38.3,1.8,LC055107,61.3,40.0,75.0,,,77.0,37.0
+Caldicellulosiruptor owensensis,55205.0,OL,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Caldicellulosiruptor,GCA_000166335.1,35.4,2.4,U80596,58.3,50.0,75.0,,,80.0,30.0
+Fervidobacterium nodosum,2424.0,Rt17]B,Bacteria,Thermotogae,Thermotogae,Thermotogales,Fervidobacteriaceae,Fervidobacterium,GCA_000017545.1,35.0,1.9,M59177,58.7,41.0,70.0,,,79.0,38.0
+Petrotoga mobilis,69499.0,SJ95,Bacteria,Thermotogae,Thermotogae,Petrotogales,Petrotogaceae,Petrotoga,GCA_000018605.1,34.1,2.2,Y15479,54.3,40.0,59.0,58.0,60.0,65.0,25.0
+Pseudothermotoga elfii,38322.0,SEBR 6459,Bacteria,Thermotogae,Thermotogae,Thermotogales,Thermotogaceae,Pseudothermotoga,GCA_000504085.1,38.7,2.2,X80790,59.5,50.0,66.0,,,72.0,22.0
+Deferribacter desulfuricans,197162.0,BMA,Bacteria,Deferribacteres,Deferribacteres,Deferribacterales,Deferribacteraceae,Deferribacter,GCA_000010985.1,30.3,2.5,AB086060,59.5,40.0,62.5,60.0,65.0,70.0,30.0
+Thermobacillus composti,377615.0,KWC4,Bacteria,Firmicutes,Bacilli,Bacillales,Paenibacillaceae,Thermobacillus,GCA_000227705.3,60.1,4.4,AB254031,58.0,32.0,50.0,,,61.0,29.0
+Thermogutta terrifontis,1331910.0,R1,Bacteria,Planctomycetes,Planctomycetia,Planctomycetales,Planctomycetaceae,Thermogutta,GCA_002277955.1,57.3,4.8,KC867694,59.5,25.0,57.5,55.0,60.0,67.0,42.0
+Caldicellulosiruptor hydrothermalis,413888.0,108,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Caldicellulosiruptor,GCA_000166355.1,36.1,2.8,EF100908,58.9,50.0,65.0,,,80.0,30.0
+Acidothermus cellulolyticus,28049.0,11B,Bacteria,Actinobacteria,Actinobacteria,Acidothermales,Acidothermaceae,Acidothermus,GCA_000015025.1,66.9,2.4,NR_074501,60.8,37.0,55.0,,,65.0,28.0
+Fervidobacterium islandicum,2423.0,H21,Bacteria,Thermotogae,Thermotogae,Thermotogales,Fervidobacteriaceae,Fervidobacterium,GCA_000767275.3,40.7,2.2,M59176,60.6,50.0,65.0,,,80.0,30.0
+Marinitoga piezophila,149715.0,KA3,Bacteria,Thermotogae,Thermotogae,Petrotogales,Petrotogaceae,Marinitoga,GCA_000255135.1,29.2,2.2,AF326121,58.1,45.0,65.0,,,70.0,25.0
+Caldicellulosiruptor changbaiensis,1222016.0,CBS-Z,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Caldicellulosiruptor,GCA_003999255.1,35.1,2.9,JX280492,58.2,40.0,75.0,,,90.0,50.0
+Novibacillus thermophilus,1471761.0,SG-1 ,Bacteria,Firmicutes,Bacilli,Bacillales,Thermoactinomycetaceae,Novibacillus,GCA_002005165.1,50.4,3.6,KF958346,59.4,30.0,50.0,,,65.0,35.0
+Mahella australiensis,252966.0,50-1 BON,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family IV. Incertae Sedis,Mahella,GCA_000213255.1,43.5,3.1,AY331143,54.6,30.0,50.0,,,60.0,30.0
+Geobacillus thermocatenulatus,33938.0,DSM 730,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Geobacillus,GCA_002243665.1,51.9,3.7,Z26926,59.7,35.0,70.0,65.0,75.0,78.0,43.0
+Chloroflexus aggregans,152260.0,MD-66,Bacteria,Chloroflexi,Chloroflexia,Chloroflexales,Chloroflexaceae,Chloroflexus,GCA_000021945.1,56.4,4.7,D32255,62.7,50.0,55.0,,,67.0,17.0
+Limnochorda pilosa,1555112.0,HC45,Bacteria,Firmicutes,Limnochordia,Limnochordales,Limnochordaceae,Limnochorda,GCA_001544015.1,69.7,3.8,AB992259,63.6,30.0,47.5,45.0,50.0,55.0,25.0
+Anoxybacillus amylolyticus,294699.0,MR3C,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Anoxybacillus,GCA_001634285.1,43.6,3.2,AJ618979,56.4,45.0,61.0,,,65.0,20.0
+Thermovibrio ammonificans,228745.0,HB-1 ,Bacteria,Aquificae,Aquificae,Desulfurobacteriales,Desulfurobacteriaceae,Thermovibrio,GCA_000185805.1,52.1,1.8,AY263403,63.5,69.0,75.0,,,80.0,11.0
+Thermotoga naphthophila,93930.0, RKU-10,Bacteria,Thermotogae,Thermotogae,Thermotogales,Thermotogaceae,Thermotoga,GCA_000025105.1,46.1,1.8,AB027017,63.9,48.0,80.0,,,86.0,38.0
+Thermochromatium tepidum,1050.0,MC,Bacteria,Proteobacteria,Gammaproteobacteria,Chromatiales,Chromatiaceae,Thermochromatium,GCA_009664085.1,63.4,3.0,M59150,56.6,34.0,49.0,48.0,50.0,57.0,23.0
+Caldicellulosiruptor obsidiansis,717609.0,OB47 ,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Caldicellulosiruptor,GCA_000145215.1,35.2,2.5,GQ338764,58.9,55.0,78.0,,,85.0,30.0
+Bacillus coagulans,1398.0,ATCC 7050,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Bacillus,GCA_001039495.1,46.2,3.7,D16267,56.2,17.0,52.0,,,65.0,48.0
+Desulfurobacterium thermolithotrophum,64160.0,BSAT,Bacteria,Aquificae,Aquificae,Desulfurobacteriales,Desulfurobacteriaceae,Desulfurobacterium,GCA_000191045.1,34.9,1.5,AJ001049,61.2,40.0,70.0,,,75.0,35.0
+Meiothermus ruber,277.0,21,Bacteria,Deinococcus-Thermus,Deinococci,Thermales,Thermaceae,Meiothermus,GCA_000024425.1,63.4,3.1,Z15059,57.5,35.0,62.5,60.0,65.0,70.0,35.0
+Thermovirga lienii,336261.0,Cas60314,Bacteria,Synergistetes,Synergistia,Synergistales,Synergistaceae,Thermovirga,GCA_000233775.1,47.1,2.0,DQ071273,58.0,37.0,58.0,,,68.0,31.0
+Pseudothermotoga lettingae,177758.0,TMO,Bacteria,Thermotogae,Thermotogae,Thermotogales,Thermotogaceae,Pseudothermotoga,GCA_000017865.1,38.7,2.1,AF355615,59.8,50.0,65.0,,,75.0,25.0
+Fervidobacterium pennivorans,93466.0,Ven 5,Bacteria,Thermotogae,Thermotogae,Thermotogales,Fervidobacteriaceae,Fervidobacterium,GCA_000235405.3,38.9,2.2,NR_074097,61.3,50.0,80.0,,,100.0,50.0
+Thermus thermophilus,274.0,HB8,Bacteria,Deinococcus-Thermus,Deinococci,Thermales,Thermaceae,Thermus,GCA_002355995.1,69.0,2.1,M26923,63.9,47.0,68.5,65.0,72.0,82.0,35.0
+Ammonifex degensii,42838.0,KC4,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacteraceae,Ammonifex,GCA_000024605.1,59.4,2.2,U34975,55.7,57.0,70.0,,,77.0,20.0
+Flexistipes sinusarabici,2352.0,MAS10,Bacteria,Deferribacteres,Deferribacteres,Deferribacterales,Deferribacteraceae,Flexistipes,GCA_000218625.1,38.3,2.5,M59231,54.1,30.0,47.5,45.0,50.0,53.0,23.0
+Caldicellulosiruptor saccharolyticus,44001.0,Tp8T 6331,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Caldicellulosiruptor,GCA_000016545.1,35.3,3.0,L09178,58.7,45.0,70.0,,,80.0,35.0
+Desulfotomaculum nigrificans,1565.0,ATCC 19998,Bacteria,Firmicutes,Clostridia,Clostridiales,Peptococcaceae,Desulfotomaculum,GCA_000214435.1,46.6,2.9,X62176,55.6,30.0,55.0,,,70.0,40.0
+Bacillus methanolicus,1471.0,PB1,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Bacillus,GCA_000724485.1,38.6,3.4,X64465,55.7,35.0,55.0,,,60.0,25.0
+Defluviitoga tunisiensis,1006576.0,SulfLac1,Bacteria,Thermotogae,Thermotogae,Petrotogales,Petrotogaceae,Defluviitoga,GCA_000953715.1,31.4,2.1,FR850164,55.1,37.0,55.0,,,65.0,28.0
+Caldicellulosiruptor kronotskyensis,413889.0,2002,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Caldicellulosiruptor,GCA_000166775.1,35.1,2.8,EF100909,58.3,45.0,70.0,,,82.0,37.0
+Parageobacillus thermoglucosidasius,1426.0,DSM 2542,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Parageobacillus,GCA_001295365.1,43.9,3.9,NR_043022,58.5,37.0,60.0,,,68.0,31.0
+Thermodesulfatator indicus,171695.0,CIR29812,Bacteria,Thermodesulfobacteria,Thermodesulfobacteria,Thermodesulfobacteriales,Thermodesulfobacteriaceae,Thermodesulfatator,GCA_000217795.1,42.4,2.3,AF393376,62.4,55.0,70.0,,,80.0,25.0
+Thermosediminibacter oceani,291990.0,JW/IW-1228P,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Thermosediminibacter,GCA_000144645.1,46.8,2.3,AY703478,60.0,43.0,64.0,,,76.0,33.0
+Caldithrix abyssi,187145.0,LF13 ,Bacteria,Calditrichaeota,Calditrichae,Calditrichales,Calditrichaceae,Caldithrix,GCA_001886815.1,45.1,5.0,AJ430587,57.2,40.0,60.0,,,70.0,30.0
+Sphaerobacter thermophilus,2057.0,Sphaerobacter thermophilus,Bacteria,Chloroflexi,Thermomicrobia,Sphaerobacterales,Sphaerobacteraceae,Sphaerobacter,GCA_000024985.1,68.1,4.0,AJ420142,64.0,40.0,55.0,,,65.0,25.0
+Thermomicrobium roseum,500.0,ATCC 27502,Bacteria,Chloroflexi,Thermomicrobia,Thermomicrobiales,Thermomicrobiaceae,Thermomicrobium,GCA_000021685.1,64.3,2.9,M34115,65.5,45.0,72.5,70.0,75.0,80.0,35.0
+Anoxybacter fermentans,1323375.0,DY22613,Bacteria,Firmicutes,Clostridia,Halanaerobiales,,Anoxybacter,GCA_003991135.1,35.9,3.6,KC794015,57.2,44.0,61.0,60.0,62.0,72.0,28.0
+Thauera hydrothermalis,2184083.0,GD-2,Bacteria,Proteobacteria,Betaproteobacteria,Rhodocyclales,Zoogloeaceae,Thauera,GCA_003345255.1,63.6,3.1,MF033446,56.7,37.0,47.5,45.0,50.0,55.0,18.0
+Thermotoga petrophila,93929.0,RKU-1,Bacteria,Thermotogae,Thermotogae,Thermotogales,Thermotogaceae,Thermotoga,GCA_000016785.1,46.1,1.8,AB027016,64.4,47.0,80.0,,,88.0,41.0
+Thermosulfidibacter takaii,412593.0,ABI70S6,Bacteria,Aquificae,Aquificae,Aquificales,,Thermosulfidibacter,GCA_001547735.1,43.0,1.8,AB282756,62.1,55.0,70.0,,,78.0,23.0
+Thermoanaerobacterium xylanolyticum,29329.0,LX-11 ,Bacteria,Firmicutes,Clostridia,Thermoanaerobacterales,Thermoanaerobacterales Family III. Incertae Sedis,Thermoanaerobacterium,GCA_000189775.3,35.0,2.5,L09172,53.9,45.0,60.0,,,70.0,25.0
+Kosmotoga olearia,651457.0,TBF 19.5.1,Bacteria,Thermotogae,Thermotogae,Kosmotogales,Kosmotogaceae,Kosmotoga,GCA_000023325.1,41.5,2.3,NR_044583,61.5,20.0,65.0,,,80.0,60.0
+Chloracidobacterium thermophilum,458033.0,B,Bacteria,Acidobacteria,Blastocatellia,,,Chloracidobacterium,GCA_000226295.1,61.3,3.7,NR_074296,54.8,44.0,51.0,,,58.0,14.0
+Thermaerobacter marianensis,73919.0,7p75a,Bacteria,Firmicutes,Clostridia,Clostridiales,Clostridiales Family XVII. Incertae Sedis,Thermaerobacter,GCA_000184705.1,72.5,2.8,AB011495,64.0,50.0,75.0,74.0,76.0,80.0,30.0
+Thermomonospora curvata,2020.0,B9,Bacteria,Actinobacteria,Actinobacteria,Streptosporangiales,Thermomonosporaceae,Thermomonospora,GCA_000024385.1,,5.6,AF002262,60.0,40.0,50.0,,,65.0,25.0
+Caldilinea aerophila,133453.0,STL-6-O1 ,Bacteria,Chloroflexi,Caldilineae,Caldilineales,Caldilineaceae,Caldilinea,GCA_000281175.1,58.8,5.1,AB067647,58.8,37.0,55.0,,,65.0,28.0
+Mariprofundus ferrinatatus,1921087.0,CP-8,Bacteria,Proteobacteria,Zetaproteobacteria,Mariprofundales,Mariprofundaceae,Mariprofundus,GCA_002795825.1,53.7,2.3,CP018800,52.5,15.0,27.5,25.0,30.0,35.0,20.0
+Bacillus mobilis,2026190.0,0711P9-1,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Bacillus,GCA_003612955.1,35.6,5.5,KJ812449,53.3,10.0,30.0,,,39.0,29.0
+Epibacterium mobile,379347.0,MBIC01146,Bacteria,Proteobacteria,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Epibacterium,GCA_000376545.2,58.7,4.8,AB255401,54.9,5.0,33.5,30.0,37.0,45.0,40.0
+Clostridium cellulovorans,1493.0,743B,Bacteria,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Clostridium,GCA_000145275.1,31.2,5.3,X71849,52.5,20.0,37.0,,,40.0,20.0
+Diaphorobacter polyhydroxybutyrativorans,1546149.0,SL-205 ,Bacteria,Proteobacteria,Betaproteobacteria,Burkholderiales,Comamonadaceae,Diaphorobacter,GCA_002214645.1,66.7,4.1,JX974341,55.3,7.0,28.0,,,40.0,33.0
+Niveispirillum cyanobacteriorum,1612173.0,TH16,Bacteria,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Niveispirillum,GCA_002868735.1,63.4,6.0,KJ862840,56.8,20.0,30.0,,,37.0,17.0
+Archangium gephyra,48.0,M18,Bacteria,Proteobacteria,Deltaproteobacteria,Myxococcales,Archangiaceae,Archangium,GCA_001027285.1,69.4,12.5,M94273,53.4,18.0,25.0,18.0,32.0,40.0,22.0
+Alkaliphilus oremlandii,461876.0,OhILAs,Bacteria,Firmicutes,Clostridia,Clostridiales,Clostridiaceae,Alkaliphilus,GCA_000018325.1,,3.1,DQ250645,54.1,32.0,37.0,,,44.0,12.0
+Immundisolibacter cernigliae,1810504.0,TR3.2,Bacteria,Proteobacteria,Gammaproteobacteria,Immundisolibacterales,Immundisolibacteraceae,Immundisolibacter,GCA_001697225.1,67.8,3.2,D84020,53.7,20.0,29.0,28.0,30.0,36.0,16.0
+Octadecabacter temperatus,1458307.0,SB1,Bacteria,Proteobacteria,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Octadecabacter,GCA_001187845.1,54.7,3.3,KF836544,53.5,4.0,20.0,,,25.0,21.0
+Paenibacillus beijingensis,1126833.0,BJ-18,Bacteria,Firmicutes,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus,GCA_000961095.1,52.5,5.7,NR_132612,56.3,10.0,30.0,,,45.0,35.0
+Spirosoma aerolatum,1211326.0,PR1012K,Bacteria,Bacteroidetes,Cytophagia,Cytophagales,Cytophagaceae,Spirosoma,GCA_002056795.1,48.3,8.0,JX089325,55.1,10.0,25.0,,,40.0,30.0
+Bacillus kochii,859143.0,WCC 4582,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Bacillus,GCA_002276165.1,36.8,4.7,FN995265,53.5,10.0,30.0,,,40.0,30.0
+Vibrio tapetis,52443.0,B1090,Bacteria,Proteobacteria,Gammaproteobacteria,Vibrionales,Vibrionaceae,Vibrio,GCA_900233005.1,43.7,5.7,Y08430,54.5,4.0,18.0,,,22.0,18.0
+Nocardioides humi,449461.0,DCY24,Bacteria,Actinobacteria,Actinobacteria,Propionibacteriales,Nocardioidaceae,Nocardioides,GCA_006494775.1,72.3,6.2,EF623863,57.8,25.0,33.5,30.0,37.0,42.0,17.0
+Skermanella pratensis,2233999.0,W17,Bacteria,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Rhodospirillaceae,Skermanella,GCA_008843145.1,67.3,5.9,MG928499,58.7,10.0,30.0,,,40.0,30.0
+Bacillus altitudinis,293387.0,Bi.FFUP1,Bacteria,Firmicutes,Bacilli,Bacillales,Bacillaceae,Bacillus,GCA_005849435.1,41.3,3.9,JX183147,55.0,20.0,33.5,30.0,37.0,50.0,30.0
+Yangia pacifica,311180.0,DX5-10,Bacteria,Proteobacteria,Alphaproteobacteria,Rhodobacterales,Rhodobacteraceae,Yangia,GCA_003111685.1,66.5,5.2,AJ877265,55.3,22.0,37.0,,,40.0,18.0
+Burkholderia plantarii,41899.0,ATCC 43733,Bacteria,Proteobacteria,Betaproteobacteria,Burkholderiales,Burkholderiaceae,Burkholderia,GCA_001411805.1,68.6,8.1,U96933,54.4,4.0,33.5,32.0,35.0,38.0,34.0
+Gramella flava,1486245.0,LT2011,Bacteria,Bacteroidetes,Flavobacteriia,Flavobacteriales,Flavobacteriaceae,Gramella,GCA_001951155.1,42.1,4.0,JX397931,51.1,10.0,30.0,,,35.0,25.0
+Planococcus halocryophilus,1215089.0,Or1,Bacteria,Firmicutes,Bacilli,Bacillales,Planococcaceae,Planococcus,GCA_001687585.2,40.1,3.4,JF742665,55.6,-15.0,25.0,,,37.0,47.0
+Kocuria palustris,71999.0,DSM11925,Bacteria,Actinobacteria,Actinobacteria,Micrococcales,Micrococcaceae,Kocuria,GCA_001275345.1,70.5,2.9,Y16264,57.2,10.0,28.0,,,30.0,20.0
+Glutamicibacter halophytocola,1933880.0,KLBMP 5180,Bacteria,Actinobacteria,Actinobacteria,Micrococcales,Micrococcaceae,Glutamicibacter,GCA_001302565.1,60.0,3.9,JX993762,57.2,4.0,26.5,25.0,28.0,37.0,33.0
+Paenibacillus bovis,1616788.0,BD3526,Bacteria,Firmicutes,Bacilli,Bacillales,Paenibacillaceae,Paenibacillus,GCA_001421015.2,47.2,5.5,KM978955,54.3,10.0,32.5,30.0,35.0,40.0,30.0
+Anaerostipes hadrus,649756.0,Anaerostipes hadrus,Bacteria,Firmicutes,Clostridia,Clostridiales,Lachnospiraceae,Anaerostipes,GCA_001998765.1,37.3,3.2,FR749932,53.5,30.0,37.0,,,45.0,15.0
+Spirosoma radiotolerans,1379870.0,DG5A,Bacteria,Bacteroidetes,Cytophagia,Cytophagales,Cytophagaceae,Spirosoma,GCA_000974425.1,49.5,7.0,KF303585,54.5,10.0,27.5,25.0,30.0,30.0,20.0
+Nitratifractor salsuginis,269261.0,E9I37-1,Bacteria,Proteobacteria,Epsilonproteobacteria,Campylobacterales,,Nitratifractor,GCA_000186245.1,53.9,2.1,AB175500,55.7,28.0,37.0,,,40.0,12.0
+Haliangium ochraceum,80816.0,SMP-2,Bacteria,Proteobacteria,Deltaproteobacteria,Myxococcales,Kofleriaceae,Haliangium,GCA_000024805.1,69.5,9.4,AB016469,56.8,20.0,32.0,30.0,34.0,40.0,20.0
+Acidiphilium multivorum,62140.0,AIU 301 ,Bacteria,Proteobacteria,Alphaproteobacteria,Rhodospirillales,Acetobacteraceae,Acidiphilium,GCA_000202835.1,67.0,4.2,AB006711,56.7,17.0,31.0,27.0,35.0,42.0,25.0
+Oblitimonas alkaliphila,1697053.0,B4199,Bacteria,Proteobacteria,Gammaproteobacteria,Pseudomonadales,Pseudomonadaceae,Oblitimonas,GCA_001267175.1,47.4,2.5,KP986583,52.8,10.0,27.5,20.0,35.0,42.0,32.0
+Chitinophaga pinensis,79329.0,ATCC 43595,Bacteria,Bacteroidetes,Chitinophagia,Chitinophagales,Chitinophagaceae,Chitinophaga,GCA_000024005.1,45.2,9.1,AF078775,50.5,10.0,23.5,23.0,24.0,40.0,30.0
+Mesoplasma coleopterae,324078.0,BARC 779,Bacteria,Tenericutes,Mollicutes,Entomoplasmatales,Entomoplasmataceae,Mesoplasma,GCA_002804245.1,27.2,0.8,DQ514605,49.5,10.0,33.5,30.0,37.0,37.0,27.0
+Deinococcus actinosclerus,1768108.0,BM2,Bacteria,Deinococcus-Thermus,Deinococci,Deinococcales,Deinococcaceae,Deinococcus,GCA_001507665.1,70.6,3.3,KT448814,55.7,25.0,25.0,,,37.0,12.0
+Akkermansia glycaniphila,1679444.0,Pyt,Bacteria,Verrucomicrobia,Verrucomicrobiae,Verrucomicrobiales,Akkermansiaceae,Akkermansia,GCA_900097105.1,57.6,3.1,KT254068,55.9,15.0,27.5,25.0,30.0,40.0,25.0
+Escherichia marmotae,1499973.0,HT073016,Bacteria,Proteobacteria,Gammaproteobacteria,Enterobacterales,Enterobacteriaceae,Escherichia,GCA_002900365.1,50.4,4.9,KJ787692,54.7,25.0,37.0,,,37.0,12.0
+Salinispira pacifica,1307761.0,L21-RPul-D2,Bacteria,Spirochaetes,Spirochaetia,Spirochaetales,Spirochaetaceae,Salinispira,GCA_000507245.1,51.9,3.8,KC665949,53.8,20.0,35.0,,,45.0,25.0
+Halomonas titanicae,664683.0,BH1,Bacteria,Proteobacteria,Gammaproteobacteria,Oceanospirillales,Halomonadaceae,Halomonas,GCA_006542315.2,54.6,5.3,FN433898,55.7,4.0,33.5,30.0,37.0,42.0,38.0
