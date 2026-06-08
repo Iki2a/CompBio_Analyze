@@ -1,16 +1,22 @@
 import pandas as pd
-import os
 import subprocess
-import zipfile
-import shutil
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+RAW_DATA_DIR = PROJECT_ROOT / "data" / "raw"
+PROCESSED_DATA_DIR = PROJECT_ROOT / "data" / "processed"
+GENOMES_DIR = PROJECT_ROOT / "data" / "genomes"
+TOOLS_DIR = PROJECT_ROOT / "tools"
 
 def main():
     # Buat direktori tujuan
-    out_dir = "dataset_genom"
-    os.makedirs(out_dir, exist_ok=True)
+    out_dir = GENOMES_DIR
+    out_dir.mkdir(parents=True, exist_ok=True)
+    PROCESSED_DATA_DIR.mkdir(parents=True, exist_ok=True)
     
     # Baca CSV TEMPURA
-    csv_file = '200617_TEMPURA.csv'
+    csv_file = RAW_DATA_DIR / '200617_TEMPURA.csv'
     print(f"Membaca {csv_file}...")
     
     # Memastikan encoding terbaca dengan baik
@@ -50,8 +56,9 @@ def main():
     final_df = pd.concat([df_thermo_sample, df_meso_sample])
     
     # Simpan daftar yang akan diunduh ke CSV baru agar mudah dilacak
-    final_df.to_csv("selected_genomes_for_download.csv", index=False)
-    print(f"\nDisimpan daftar 91 genom ke 'selected_genomes_for_download.csv'")
+    selected_csv = PROCESSED_DATA_DIR / "selected_genomes_for_download.csv"
+    final_df.to_csv(selected_csv, index=False)
+    print(f"\nDisimpan daftar 91 genom ke '{selected_csv}'")
     
     # Download dengan datasets CLI
     print("\nMulai mengunduh FASTA dan GFF3 menggunakan NCBI Datasets CLI...")
@@ -60,9 +67,9 @@ def main():
     for idx, row in final_df.iterrows():
         acc = str(row['Assembly_or_accession']).strip()
         species = str(row['Genus_and_species']).replace(' ', '_').replace('"', '')
-        zip_filename = os.path.join(out_dir, f"{acc}_{species}.zip")
+        zip_filename = out_dir / f"{acc}_{species}.zip"
         
-        if os.path.exists(zip_filename):
+        if zip_filename.exists():
             print(f"[{success_count+1}/91] Melewati {acc} ({species}) - sudah ada...")
             success_count += 1
             continue
@@ -70,9 +77,9 @@ def main():
         print(f"[{success_count+1}/91] Mengunduh {acc} ({species})...")
         
         cmd = [
-            ".\\datasets.exe", "download", "genome", "accession", acc,
+            str(TOOLS_DIR / "datasets.exe"), "download", "genome", "accession", acc,
             "--include", "genome,gff3",
-            "--filename", zip_filename
+            "--filename", str(zip_filename)
         ]
         
         # Eksekusi CLI

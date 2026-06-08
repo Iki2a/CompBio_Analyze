@@ -4,6 +4,12 @@ import tempfile
 import shutil
 import pandas as pd
 from Bio import SeqIO
+from pathlib import Path
+
+
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+PROCESSED_DATA_DIR = PROJECT_ROOT / "data" / "processed"
+GENOMES_DIR = PROJECT_ROOT / "data" / "genomes"
 
 def get_gc(seq):
     """Menghitung persentase GC secara mandiri tanpa bergantung pada versi Biopython"""
@@ -17,7 +23,8 @@ def get_gc(seq):
     return (gc_count / total) * 100.0
 
 def extract_features():
-    df = pd.read_csv('selected_genomes_for_download.csv')
+    selected_csv = PROCESSED_DATA_DIR / 'selected_genomes_for_download.csv'
+    df = pd.read_csv(selected_csv)
     
     results = []
     
@@ -35,9 +42,9 @@ def extract_features():
         else:
             group = 'Mesofil'
             
-        zip_path = os.path.join('dataset_genom', f"{acc}_{species_safe}.zip")
+        zip_path = GENOMES_DIR / f"{acc}_{species_safe}.zip"
         
-        if not os.path.exists(zip_path):
+        if not zip_path.exists():
             print(f"[{idx+1}/{len(df)}] File tidak ditemukan: {zip_path}, melewati...")
             continue
             
@@ -131,8 +138,9 @@ def extract_features():
             shutil.rmtree(temp_dir)
             
     out_df = pd.DataFrame(results)
-    out_df.to_csv('real_gc_data.csv', index=False)
-    print("\nSelesai! Fitur GC berhasil diekstrak dan disimpan ke 'real_gc_data.csv'")
+    out_csv = PROCESSED_DATA_DIR / 'real_gc_data.csv'
+    out_df.to_csv(out_csv, index=False)
+    print(f"\nSelesai! Fitur GC berhasil diekstrak dan disimpan ke '{out_csv}'")
 
 if __name__ == '__main__':
     extract_features()

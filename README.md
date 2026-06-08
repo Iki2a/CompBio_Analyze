@@ -10,15 +10,17 @@ data.
 
 ## Struktur Proyek
 
-- `200617_TEMPURA.csv`: dataset TEMPURA mentah.
-- `selected_genomes_for_download.csv`: 91 genom yang dipilih dari TEMPURA.
-- `dataset_genom/`: ZIP genom lokal hasil download dari NCBI Datasets.
-- `real_gc_data.csv`: fitur GC hasil ekstraksi dari genom lokal.
-- `download_genomes.py`: memilih sampel dan mengunduh genom/anotasi.
-- `extract_features.py`: mengekstrak `GCw`, `GC_tRNA`, `GC_16S`, dan `GC_23S`.
-- `gc_analysis.py`: menjalankan statistik, model machine learning, dan membuat figure.
-- `gc_analysis.ipynb`: versi notebook dari analisis.
-- `fig*.png`: output visualisasi utama.
+- `data/raw/200617_TEMPURA.csv`: dataset TEMPURA mentah.
+- `data/processed/selected_genomes_for_download.csv`: 91 genom yang dipilih dari TEMPURA.
+- `data/processed/real_gc_data.csv`: fitur GC hasil ekstraksi dari genom lokal.
+- `data/genomes/`: ZIP genom lokal hasil download dari NCBI Datasets.
+- `scripts/download_genomes.py`: memilih sampel dan mengunduh genom/anotasi.
+- `scripts/extract_features.py`: mengekstrak `GCw`, `GC_tRNA`, `GC_16S`, dan `GC_23S`.
+- `scripts/gc_analysis.py`: menjalankan statistik, model machine learning, dan membuat figure.
+- `notebooks/gc_analysis.ipynb`: versi notebook dari analisis.
+- `figures/`: output visualisasi utama.
+- `tools/datasets.exe`: NCBI Datasets CLI lokal.
+- `docs/gemini.md`: catatan/ringkasan proyek.
 
 ## Setup
 
@@ -33,7 +35,7 @@ python -m pip install -r requirements.txt
 Jika memakai Jupyter:
 
 ```powershell
-jupyter notebook gc_analysis.ipynb
+jupyter notebook notebooks/gc_analysis.ipynb
 ```
 
 ## Cara Menjalankan Pipeline
@@ -41,34 +43,34 @@ jupyter notebook gc_analysis.ipynb
 Untuk menjalankan analisis dari data yang sudah tersedia:
 
 ```powershell
-python gc_analysis.py
+python scripts/gc_analysis.py
 ```
 
 Untuk mengekstrak ulang fitur GC dari ZIP genom lokal:
 
 ```powershell
-python extract_features.py
+python scripts/extract_features.py
 ```
 
 Untuk memilih sampel dan mengunduh ulang genom memakai NCBI Datasets CLI:
 
 ```powershell
-python download_genomes.py
+python scripts/download_genomes.py
 ```
 
-`download_genomes.py` memakai `datasets.exe` yang sudah ada di root repo.
+`scripts/download_genomes.py` memakai `tools/datasets.exe`.
 
 ## Output Figure
 
-- `fig1_distribusi_gc.png`: distribusi GC content per kelompok bakteri.
-- `fig2_distribusi_topt.png`: distribusi `Topt` per kelompok.
-- `fig3_perbedaan_gc.png`: selisih rata-rata GC dan effect size.
-- `fig4_scatter.png`: scatter GC content vs `Topt`.
-- `fig5_heatmap.png`: heatmap korelasi Pearson.
-- `fig6_pgls.png`: perbandingan OLS dan simulasi PGLS.
-- `fig8_model_comparison.png`: feature importance RF dan prediksi vs aktual.
-- `fig9_roc_cm.png`: ROC curve dan confusion matrix.
-- `fig10_single_auc.png`: AUC per fitur tunggal.
+- `figures/fig1_distribusi_gc.png`: distribusi GC content per kelompok bakteri.
+- `figures/fig2_distribusi_topt.png`: distribusi `Topt` per kelompok.
+- `figures/fig3_perbedaan_gc.png`: selisih rata-rata GC dan effect size.
+- `figures/fig4_scatter.png`: scatter GC content vs `Topt`.
+- `figures/fig5_heatmap.png`: heatmap korelasi Pearson.
+- `figures/fig6_pgls.png`: perbandingan OLS dan simulasi PGLS.
+- `figures/fig8_model_comparison.png`: feature importance RF dan prediksi vs aktual.
+- `figures/fig9_roc_cm.png`: ROC curve dan confusion matrix.
+- `figures/fig10_single_auc.png`: AUC per fitur tunggal.
 
 Tidak ada `fig7` pada pipeline saat ini.
 
@@ -76,7 +78,7 @@ Tidak ada `fig7` pada pipeline saat ini.
 
 Fitur `GCw`, `GC_tRNA`, `GC_16S`, dan `GC_23S` diekstrak dari genom/anotasi
 lokal. Namun `GC_core`, `GC1`, `GC2`, `GC3`, dan hasil PGLS pada
-`gc_analysis.py` saat ini adalah estimasi/simulasi untuk eksplorasi, bukan fitur
+`scripts/gc_analysis.py` saat ini adalah estimasi/simulasi untuk eksplorasi, bukan fitur
 hasil ekstraksi langsung dari genom atau analisis filogenetik penuh.
 
 Karena itu, klaim biologis utama sebaiknya difokuskan pada fitur yang benar-benar
@@ -86,8 +88,8 @@ diekstrak dari data genom lokal, terutama `GCw`, `GC_tRNA`, `GC_16S`, dan
 ## Verifikasi Cepat
 
 ```powershell
-python -m py_compile download_genomes.py extract_features.py gc_analysis.py
-python gc_analysis.py
+python -m py_compile scripts/download_genomes.py scripts/extract_features.py scripts/gc_analysis.py
+python scripts/gc_analysis.py
 ```
 
 Setelah selesai, pastikan figure `fig1`, `fig2`, `fig3`, `fig4`, `fig5`,
