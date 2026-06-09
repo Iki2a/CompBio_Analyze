@@ -10,17 +10,29 @@ data.
 
 ## Struktur Proyek
 
-- `data/raw/200617_TEMPURA.csv`: dataset TEMPURA mentah.
-- `data/processed/selected_genomes_for_download.csv`: 91 genom yang dipilih dari TEMPURA.
-- `data/processed/real_gc_data.csv`: fitur GC hasil ekstraksi dari genom lokal.
-- `data/genomes/`: ZIP genom lokal hasil download dari NCBI Datasets.
-- `scripts/download_genomes.py`: memilih sampel dan mengunduh genom/anotasi.
-- `scripts/extract_features.py`: mengekstrak `GCw`, `GC_tRNA`, `GC_16S`, dan `GC_23S`.
-- `scripts/gc_analysis.py`: menjalankan statistik, model machine learning, dan membuat figure.
-- `notebooks/gc_analysis.ipynb`: versi notebook dari analisis.
-- `figures/`: output visualisasi utama.
-- `tools/datasets.exe`: NCBI Datasets CLI lokal.
-- `docs/gemini.md`: catatan/ringkasan proyek.
+```text
+CompBio/
+|-- README.md
+|-- requirements.txt
+|-- data/
+|   |-- raw/
+|   |   `-- 200617_TEMPURA.csv                 # dataset TEMPURA mentah
+|   |-- processed/
+|   |   |-- selected_genomes_for_download.csv  # 91 genom pilihan dari TEMPURA
+|   |   `-- real_gc_data.csv                   # fitur GC hasil ekstraksi lokal
+|   `-- genomes/                               # ZIP genom lokal dari NCBI Datasets
+|-- scripts/
+|   |-- download_genomes.py                    # memilih sampel dan download genom
+|   |-- extract_features.py                    # ekstraksi GCw, tRNA, 16S, 23S
+|   `-- gc_analysis.py                         # statistik, ML, dan figure utama
+|-- notebooks/
+|   `-- gc_analysis.ipynb                      # versi notebook analisis
+|-- figures/                                   # output visualisasi
+|-- tools/
+|   `-- datasets.exe                           # NCBI Datasets CLI lokal
+`-- docs/
+    `-- gemini.md                              # catatan/ringkasan proyek
+```
 
 ## Setup
 
